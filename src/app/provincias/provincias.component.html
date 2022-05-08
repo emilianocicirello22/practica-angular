@@ -1,0 +1,52 @@
+<h2>Provincias listadas estaticamente</h2>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Provincia</th>
+        <th scope="col">Capital</th>        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Buenos Aires</td>
+        <td>La Plata</td>       
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Chaco</td>
+        <td>Resistencia</td>        
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Chubut</td>
+        <td>Rawson</td>       
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>Formosa</td>
+        <td>Formosa</td>       
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+        <td>Entre Ríos</td>
+        <td>Parana</td>       
+      </tr>
+      
+    </tbody>
+  </table>
+
+
+<h2>Provincias listadas a traves de lista dinamica</h2>
+
+
+  <table class="table table-dark table-hover">
+    <tbody>
+      <tr *ngFor="let Provincia of Provincias">        
+        <td>{{Provincia.Provincia}}</td>
+        <td>{{Provincia.Capital}}</td>        
+      </tr>     
+    </tbody>
+  </table>
